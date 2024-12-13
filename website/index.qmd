@@ -15,7 +15,7 @@ format:
 <div style="text-align: center">
 
 
-# Deteção de Pessoas em Ambiente Diurno e Noturno Para Missões de SAR e Patrulhamento
+# Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento
 **Pedro Margalho, Gonçalo Cruz, Diogo Silva**
 
 ![](fap_afa.png){width=400}
