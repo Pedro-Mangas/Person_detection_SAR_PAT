@@ -105,7 +105,7 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#impact-of-synthetic-images-in-the-training-of-neural-networks-for-airborne-vessel-segmentation" id="toc-impact-of-synthetic-images-in-the-training-of-neural-networks-for-airborne-vessel-segmentation" class="nav-link active" data-scroll-target="#impact-of-synthetic-images-in-the-training-of-neural-networks-for-airborne-vessel-segmentation">Impact of Synthetic Images in the Training of Neural Networks for Airborne Vessel Segmentation</a></li>
+  <li><a href="#deteção-de-pessoas-em-ambiente-diurno-e-noturno-para-missões-de-sar-e-patrulhamento" id="toc-deteção-de-pessoas-em-ambiente-diurno-e-noturno-para-missões-de-sar-e-patrulhamento" class="nav-link active" data-scroll-target="#deteção-de-pessoas-em-ambiente-diurno-e-noturno-para-missões-de-sar-e-patrulhamento">Deteção de Pessoas em Ambiente Diurno e Noturno Para Missões de SAR e Patrulhamento</a></li>
   <li><a href="#examples-from-blender" id="toc-examples-from-blender" class="nav-link" data-scroll-target="#examples-from-blender">Examples from Blender</a></li>
   <li><a href="#examples-from-gaugan" id="toc-examples-from-gaugan" class="nav-link" data-scroll-target="#examples-from-gaugan">Examples from GauGAN</a></li>
   </ul>
@@ -118,9 +118,9 @@ div.csl-indent {
 
 
 <p><img src="header.png" class="img-fluid" width="800"></p>
-<section id="impact-of-synthetic-images-in-the-training-of-neural-networks-for-airborne-vessel-segmentation" class="level1" style="text-align: center">
-<h1>Impact of Synthetic Images in the Training of Neural Networks for Airborne Vessel Segmentation</h1>
-<p><strong>Francisco Matilde, Gonçalo Cruz, Diogo Silva</strong></p>
+<section id="deteção-de-pessoas-em-ambiente-diurno-e-noturno-para-missões-de-sar-e-patrulhamento" class="level1" style="text-align: center">
+<h1>Deteção de Pessoas em Ambiente Diurno e Noturno Para Missões de SAR e Patrulhamento</h1>
+<p><strong>Pedro Margalho, Gonçalo Cruz, Diogo Silva</strong></p>
 <p><img src="fap_afa.png" class="img-fluid" width="400"></p>
 </section>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -133,7 +133,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Automation scripts for Blender and other utilities used in the development of this work can be found in the official <a href="https://github.com/ciafa-sw/synthetic_vessel_detection">Github repository</a>.</p>
+<p>Os códigos para realizar treino, validação e inferências dos modelos utilizados no desenvolvimento deste estudo estão disponíveis no <a href="https://pedro-mangas.github.io/Person_detection_SAR_PAT/">repositório do Github oficial</a>.</p>
 </div>
 </div>
 <p>Synthetic images have appeared as a possible solution to the scarcity of real images for training neural networks. We investigate their use in the training of ship detectors in aerial imagery. We create a synthetic dataset through 2 distinct methods: modeling and rendering with Blender, and a learning-based approach with GauGAN. YOLACT++ was chosen as the detector and its performance was evaluated when synthetic images were included in its training. The results suggest that synthetic augmentations can improve a model’s performance, under certain conditions. Adding synthetic data to large training sets degraded performance on the target domain, but significantly improved it on small datasets.</p>
