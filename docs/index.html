@@ -136,16 +136,46 @@ Note
 <p>Os códigos para realizar treino, validação e inferências dos modelos utilizados no desenvolvimento deste estudo estão disponíveis no <a href="https://pedro-mangas.github.io/Person_detection_SAR_PAT/">repositório do Github oficial</a>.</p>
 </div>
 </div>
-<p>Como ajuda para missões de SAR e de patrulhamento realizadas pela Força Aérea Portuguesa (FA), introduzem-se as tecnologias atuais que têm vindo a ser desenvolvidas e cada vez mais utilizadas nestes âmbitos, os veículos aéreos não tripulados () . Em ambas as missões, busca e salvamento e patrulhamento, uma tarefa em comum é a deteção de pessoas, quer seja por serem agentes de interesse no cenário de patrulhamento, como por exemplo possíveis intrusos, quer seja por serem o objeto de resgate num cenário de busca e salvamento. Para isso, o presente estudo teve como objetivos desenvolver um sistema de deteção automática de pessoas, passível de ser utilizado para análise automática e apoio à decisão em missões de busca e patrulhamento, utilizando imagens aéreas de baixa altitude. Esta ferramenta poderá ser usada para análise de dados em tempo real, recebendo uma de vídeo de um sensor a bordo. O sistema deverá ser capaz de detetar pessoas nos diversos tipos de ambientes terrestres em período diurno e noturno.</p>
+<p>Como ajuda para missões de SAR (Search and Rescue) e de patrulhamento realizadas pela Força Aérea Portuguesa (FA), introduzem-se as tecnologias atuais que têm vindo a ser desenvolvidas e cada vez mais utilizadas nestes âmbitos, os veículos aéreos não tripulados (UAS) . Em ambas as missões, busca e salvamento e patrulhamento, uma tarefa em comum é a deteção de pessoas, quer seja por serem agentes de interesse no cenário de patrulhamento, como por exemplo possíveis intrusos, quer seja por serem o objeto de resgate num cenário de busca e salvamento. Para isso, o presente estudo teve como objetivos desenvolver um sistema de deteção automática de pessoas, passível de ser utilizado para análise automática e apoio à decisão em missões de busca e patrulhamento, utilizando imagens aéreas de baixa altitude. Esta ferramenta poderá ser usada para análise de dados em tempo real, recebendo uma stream de vídeo de um sensor a bordo. O sistema é capaz de detetar pessoas nos diversos tipos de ambientes terrestres em período diurno e noturno.</p>
 <hr>
-<p>Images from <a href="https://vislab.isr.ist.utl.pt/seagull-dataset/">Seagull dataset</a> <span class="citation" data-cites="seagull2017"><a href="#ref-seagull2017" role="doc-biblioref">[1]</a></span> were used for the test set. These are aerial images of vessels, which represent our target scenario. Our setup was under the assumption that we didn’t have enough data for our target scenario. To adress this, we simulated our target scenario with Blender and also used real images from a related domain, i.e.&nbsp;satellite imagery from Airbus Ship Detection Challenge <span class="citation" data-cites="airbus-ship-detection"><a href="#ref-airbus-ship-detection" role="doc-biblioref">[2]</a></span>. We also used GauGAN to produce synthetic images from the related domain. We didn’t use generated GauGAN images for the target domain in the training set, as we had very little images and the generated images were fairly similar.</p>
+<p>Para treinar os diversos modelos utilizados neste sistema foram utilizados os datasets públicos <a href="https://sites.google.com/uw.edu/wisard/">WiSARD</a> <span class="citation" data-cites="BroylesHaynerEtAl2022"><a href="#ref-BroylesHaynerEtAl2022" role="doc-biblioref">[1]</a></span>, <a href="http://ieee-dataport.org/documents/search-and-rescue-image-dataset-person-detection-sard">SARD</a> <span class="citation" data-cites="ahxm-k331-21"><a href="#ref-ahxm-k331-21" role="doc-biblioref">[2]</a></span> e <a href="https://www.kaggle.com/datasets/kuantinglai/ntut-4k-drone-photo-dataset-for-human-detection?resource=download&amp;select=ntut_drone_train">NTUT</a> <span class="citation" data-cites="NTUT4KDronePhoto"><a href="#ref-NTUT4KDronePhoto" role="doc-biblioref">[3]</a></span>, e um dataset criado especificamente para o presente estudo designado AFA.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/final_sample.png" class="img-fluid figure-img" width="400"></p>
-<figcaption>Sample of data used for detector training.</figcaption>
+<p><img src="img/exemplo imagem 1 WiSARD.jpeg" class="img-fluid figure-img" width="400"></p>
+<figcaption>Imagem contida no dataset WiSARD.</figcaption>
 </figure>
 </div>
-<p>Our Blender generation process aimed to extend the methodology adopted in the production of the <a href="https://vislab.isr.tecnico.ulisboa.pt/marsyn-dataset/">MarSyn dataset</a> <span class="citation" data-cites="marsyn2022"><a href="#ref-marsyn2022" role="doc-biblioref">[3]</a></span>, by automating many tasks.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/DJI_0127_00000465.jpg" class="img-fluid figure-img" width="400"></p>
+<figcaption>Imagem térmica contida no dataset WiSARD.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/exemplo imagem 2 NTUT.jpg" class="img-fluid figure-img" width="400"></p>
+<figcaption>Imagem contida no dataset NTUT.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/exemplo imagem 2 SARD.jpg" class="img-fluid figure-img" width="400"></p>
+<figcaption>Imagem contida no dataset SARD.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Recolha_7_W_06061_png.rf.3d09eec498f74f14e0db5b240f0eb31b.jpg" class="img-fluid figure-img" width="400"></p>
+<figcaption>Imagem contida no dataset AFA.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Recolha_11_00061.png" class="img-fluid figure-img" width="400"></p>
+<figcaption>Imagem térmica contida no dataset AFA.</figcaption>
+</figure>
+</div>
+<p>Our Blender generation process aimed to extend the methodology adopted in the production of the <a href="https://vislab.isr.tecnico.ulisboa.pt/marsyn-dataset/">MarSyn dataset</a>, by automating many tasks.</p>
 <section id="examples-from-blender" class="level2">
 <h2 class="anchored" data-anchor-id="examples-from-blender">Examples from Blender</h2>
 <div class="quarto-figure quarto-figure-center">
@@ -169,14 +199,14 @@ Note
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
-<div id="ref-seagull2017" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">R. Ribeiro, G. Cruz, J. Matos, and A. Bernardino, <span>“A data set for airborne maritime surveillance environments,”</span> <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, vol. 29, no. 9, pp. 2720–2732, 2017.</div>
+<div id="ref-BroylesHaynerEtAl2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">D. *. Broyles, C. *. Hayner, and K. Leung, <span>“<span>WiSARD</span>: A labeled visual and thermal image dataset for wilderness search and rescue,”</span> in <em><span>IEEE/RSJ Int.&nbsp;Conf.&nbsp;on Intelligent Robots &amp; Systems</span></em>, 2022.</div>
 </div>
-<div id="ref-airbus-ship-detection" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">M. inversion Jeff Faudi, <span>“Airbus ship detection challenge.”</span> Kaggle, 2018. Available: <a href="https://kaggle.com/competitions/airbus-ship-detection">https://kaggle.com/competitions/airbus-ship-detection</a></div>
+<div id="ref-ahxm-k331-21" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">S. Sambolek and M. Ivasic-Kos, <span>“SEARCH AND RESCUE IMAGE DATASET FOR PERSON DETECTION - SARD.”</span> IEEE Dataport, 2021. doi: <a href="https://doi.org/10.21227/ahxm-k331">10.21227/ahxm-k331</a>.</div>
 </div>
-<div id="ref-marsyn2022" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline">M. Ribeiro, B. Damas, and A. Bernardino, <span>“Real-time ship segmentation in maritime surveillance videos using automatically annotated synthetic datasets,”</span> <em>Sensors</em>, vol. 22, p. 8090, Oct. 2022, doi: <a href="https://doi.org/10.3390/s22218090">10.3390/s22218090</a>.</div>
+<div id="ref-NTUT4KDronePhoto" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">K.-T. (K. T.) Lai, <span>“NTUT 4K drone photo dataset for human detection.”</span> 2022. Available: <a href="https://www.kaggle.com/datasets/kuantinglai/ntut-4k-drone-photo-dataset-for-human-detection/data">https://www.kaggle.com/datasets/kuantinglai/ntut-4k-drone-photo-dataset-for-human-detection/data</a></div>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
