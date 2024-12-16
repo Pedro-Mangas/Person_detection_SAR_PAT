@@ -9,7 +9,7 @@ format:
       dark: darkly
 ---
 
-![](header.png){width=800}
+![](Capa_provisória_4.png){width=1200}
 
 
 <div style="text-align: center">
