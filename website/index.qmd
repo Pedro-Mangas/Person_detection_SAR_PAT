@@ -32,30 +32,23 @@ Como ajuda para missões de SAR (Search and Rescue) e de patrulhamento realizada
 
 Para treinar os diversos modelos utilizados neste sistema foram utilizados os datasets públicos [WiSARD](https://sites.google.com/uw.edu/wisard/) @BroylesHaynerEtAl2022, [SARD](http://ieee-dataport.org/documents/search-and-rescue-image-dataset-person-detection-sard) @ahxm-k331-21 e [NTUT](https://www.kaggle.com/datasets/kuantinglai/ntut-4k-drone-photo-dataset-for-human-detection?resource=download&select=ntut_drone_train) @NTUT4KDronePhoto, e um dataset criado especificamente para o presente estudo designado AFA.
 
+## Exemplos do WiSARD
+
 ![Imagem contida no dataset WiSARD.](img/exemplo imagem 1 WiSARD.jpeg){width=400}
 
 ![Imagem térmica contida no dataset WiSARD.](img/DJI_0127_00000465.jpg){width=400}
 
+## Exemplos do NTUT
+
 ![Imagem contida no dataset NTUT.](img/exemplo imagem 2 NTUT.jpg){width=400}
 
+## Exemplos do SARD
+
 ![Imagem contida no dataset SARD.](img/exemplo imagem 2 SARD.jpg){width=400}
+
+## Exemplos do AFA
 
 ![Imagem contida no dataset AFA.](img/Recolha_7_W_06061_png.rf.3d09eec498f74f14e0db5b240f0eb31b.jpg){width=400}
 
 ![Imagem térmica contida no dataset AFA.](img/Recolha_11_00061.png){width=400}
-
-
-
-Our Blender generation process aimed to extend the methodology adopted in the production of the [MarSyn dataset](https://vislab.isr.tecnico.ulisboa.pt/marsyn-dataset/), by automating many tasks. 
-
-## Examples from Blender
-
-![Image-segmentation pairs from Blender generated images.](img/blender.png){width=400}
-
-
-
-
-## Examples from GauGAN
-
-![Image-segmentation pairs from GauGAN generated images.](img/gaugan.png){width=400}
 

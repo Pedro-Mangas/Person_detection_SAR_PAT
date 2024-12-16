@@ -106,8 +106,10 @@ div.csl-indent {
    
   <ul>
   <li><a href="#deteção-de-pessoas-em-ambiente-diurno-e-noturno-para-missões-de-busca-e-patrulhamento" id="toc-deteção-de-pessoas-em-ambiente-diurno-e-noturno-para-missões-de-busca-e-patrulhamento" class="nav-link active" data-scroll-target="#deteção-de-pessoas-em-ambiente-diurno-e-noturno-para-missões-de-busca-e-patrulhamento">Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento</a></li>
-  <li><a href="#examples-from-blender" id="toc-examples-from-blender" class="nav-link" data-scroll-target="#examples-from-blender">Examples from Blender</a></li>
-  <li><a href="#examples-from-gaugan" id="toc-examples-from-gaugan" class="nav-link" data-scroll-target="#examples-from-gaugan">Examples from GauGAN</a></li>
+  <li><a href="#exemplos-do-wisard" id="toc-exemplos-do-wisard" class="nav-link" data-scroll-target="#exemplos-do-wisard">Exemplos do WiSARD</a></li>
+  <li><a href="#exemplos-do-ntut" id="toc-exemplos-do-ntut" class="nav-link" data-scroll-target="#exemplos-do-ntut">Exemplos do NTUT</a></li>
+  <li><a href="#exemplos-do-sard" id="toc-exemplos-do-sard" class="nav-link" data-scroll-target="#exemplos-do-sard">Exemplos do SARD</a></li>
+  <li><a href="#exemplos-do-afa" id="toc-exemplos-do-afa" class="nav-link" data-scroll-target="#exemplos-do-afa">Exemplos do AFA</a></li>
   </ul>
 </nav>
     </div>
@@ -139,6 +141,8 @@ Note
 <p>Como ajuda para missões de SAR (Search and Rescue) e de patrulhamento realizadas pela Força Aérea Portuguesa (FA), introduzem-se as tecnologias atuais que têm vindo a ser desenvolvidas e cada vez mais utilizadas nestes âmbitos, os veículos aéreos não tripulados (UAS) . Em ambas as missões, busca e salvamento e patrulhamento, uma tarefa em comum é a deteção de pessoas, quer seja por serem agentes de interesse no cenário de patrulhamento, como por exemplo possíveis intrusos, quer seja por serem o objeto de resgate num cenário de busca e salvamento. Para isso, o presente estudo teve como objetivos desenvolver um sistema de deteção automática de pessoas, passível de ser utilizado para análise automática e apoio à decisão em missões de busca e patrulhamento, utilizando imagens aéreas de baixa altitude. Esta ferramenta poderá ser usada para análise de dados em tempo real, recebendo uma stream de vídeo de um sensor a bordo. O sistema é capaz de detetar pessoas nos diversos tipos de ambientes terrestres em período diurno e noturno.</p>
 <hr>
 <p>Para treinar os diversos modelos utilizados neste sistema foram utilizados os datasets públicos <a href="https://sites.google.com/uw.edu/wisard/">WiSARD</a> <span class="citation" data-cites="BroylesHaynerEtAl2022"><a href="#ref-BroylesHaynerEtAl2022" role="doc-biblioref">[1]</a></span>, <a href="http://ieee-dataport.org/documents/search-and-rescue-image-dataset-person-detection-sard">SARD</a> <span class="citation" data-cites="ahxm-k331-21"><a href="#ref-ahxm-k331-21" role="doc-biblioref">[2]</a></span> e <a href="https://www.kaggle.com/datasets/kuantinglai/ntut-4k-drone-photo-dataset-for-human-detection?resource=download&amp;select=ntut_drone_train">NTUT</a> <span class="citation" data-cites="NTUT4KDronePhoto"><a href="#ref-NTUT4KDronePhoto" role="doc-biblioref">[3]</a></span>, e um dataset criado especificamente para o presente estudo designado AFA.</p>
+<section id="exemplos-do-wisard" class="level2">
+<h2 class="anchored" data-anchor-id="exemplos-do-wisard">Exemplos do WiSARD</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/exemplo imagem 1 WiSARD.jpeg" class="img-fluid figure-img" width="400"></p>
@@ -151,18 +155,27 @@ Note
 <figcaption>Imagem térmica contida no dataset WiSARD.</figcaption>
 </figure>
 </div>
+</section>
+<section id="exemplos-do-ntut" class="level2">
+<h2 class="anchored" data-anchor-id="exemplos-do-ntut">Exemplos do NTUT</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/exemplo imagem 2 NTUT.jpg" class="img-fluid figure-img" width="400"></p>
 <figcaption>Imagem contida no dataset NTUT.</figcaption>
 </figure>
 </div>
+</section>
+<section id="exemplos-do-sard" class="level2">
+<h2 class="anchored" data-anchor-id="exemplos-do-sard">Exemplos do SARD</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/exemplo imagem 2 SARD.jpg" class="img-fluid figure-img" width="400"></p>
 <figcaption>Imagem contida no dataset SARD.</figcaption>
 </figure>
 </div>
+</section>
+<section id="exemplos-do-afa" class="level2">
+<h2 class="anchored" data-anchor-id="exemplos-do-afa">Exemplos do AFA</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/Recolha_7_W_06061_png.rf.3d09eec498f74f14e0db5b240f0eb31b.jpg" class="img-fluid figure-img" width="400"></p>
@@ -173,24 +186,6 @@ Note
 <figure class="figure">
 <p><img src="img/Recolha_11_00061.png" class="img-fluid figure-img" width="400"></p>
 <figcaption>Imagem térmica contida no dataset AFA.</figcaption>
-</figure>
-</div>
-<p>Our Blender generation process aimed to extend the methodology adopted in the production of the <a href="https://vislab.isr.tecnico.ulisboa.pt/marsyn-dataset/">MarSyn dataset</a>, by automating many tasks.</p>
-<section id="examples-from-blender" class="level2">
-<h2 class="anchored" data-anchor-id="examples-from-blender">Examples from Blender</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/blender.png" class="img-fluid figure-img" width="400"></p>
-<figcaption>Image-segmentation pairs from Blender generated images.</figcaption>
-</figure>
-</div>
-</section>
-<section id="examples-from-gaugan" class="level2">
-<h2 class="anchored" data-anchor-id="examples-from-gaugan">Examples from GauGAN</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/gaugan.png" class="img-fluid figure-img" width="400"></p>
-<figcaption>Image-segmentation pairs from GauGAN generated images.</figcaption>
 </figure>
 </div>
 

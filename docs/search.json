@@ -4,20 +4,34 @@
     "href": "index.html",
     "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
     "section": "",
-    "text": "Como ajuda para missões de SAR (Search and Rescue) e de patrulhamento realizadas pela Força Aérea Portuguesa (FA), introduzem-se as tecnologias atuais que têm vindo a ser desenvolvidas e cada vez mais utilizadas nestes âmbitos, os veículos aéreos não tripulados (UAS) . Em ambas as missões, busca e salvamento e patrulhamento, uma tarefa em comum é a deteção de pessoas, quer seja por serem agentes de interesse no cenário de patrulhamento, como por exemplo possíveis intrusos, quer seja por serem o objeto de resgate num cenário de busca e salvamento. Para isso, o presente estudo teve como objetivos desenvolver um sistema de deteção automática de pessoas, passível de ser utilizado para análise automática e apoio à decisão em missões de busca e patrulhamento, utilizando imagens aéreas de baixa altitude. Esta ferramenta poderá ser usada para análise de dados em tempo real, recebendo uma stream de vídeo de um sensor a bordo. O sistema é capaz de detetar pessoas nos diversos tipos de ambientes terrestres em período diurno e noturno.\nPara treinar os diversos modelos utilizados neste sistema foram utilizados os datasets públicos WiSARD [1], SARD [2] e NTUT [3], e um dataset criado especificamente para o presente estudo designado AFA.\nOur Blender generation process aimed to extend the methodology adopted in the production of the MarSyn dataset, by automating many tasks."
+    "text": "Como ajuda para missões de SAR (Search and Rescue) e de patrulhamento realizadas pela Força Aérea Portuguesa (FA), introduzem-se as tecnologias atuais que têm vindo a ser desenvolvidas e cada vez mais utilizadas nestes âmbitos, os veículos aéreos não tripulados (UAS) . Em ambas as missões, busca e salvamento e patrulhamento, uma tarefa em comum é a deteção de pessoas, quer seja por serem agentes de interesse no cenário de patrulhamento, como por exemplo possíveis intrusos, quer seja por serem o objeto de resgate num cenário de busca e salvamento. Para isso, o presente estudo teve como objetivos desenvolver um sistema de deteção automática de pessoas, passível de ser utilizado para análise automática e apoio à decisão em missões de busca e patrulhamento, utilizando imagens aéreas de baixa altitude. Esta ferramenta poderá ser usada para análise de dados em tempo real, recebendo uma stream de vídeo de um sensor a bordo. O sistema é capaz de detetar pessoas nos diversos tipos de ambientes terrestres em período diurno e noturno.\nPara treinar os diversos modelos utilizados neste sistema foram utilizados os datasets públicos WiSARD [1], SARD [2] e NTUT [3], e um dataset criado especificamente para o presente estudo designado AFA."
   },
   {
-    "objectID": "index.html#examples-from-blender",
-    "href": "index.html#examples-from-blender",
+    "objectID": "index.html#exemplos-do-wisard",
+    "href": "index.html#exemplos-do-wisard",
     "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
-    "section": "Examples from Blender",
-    "text": "Examples from Blender\n\n\n\nImage-segmentation pairs from Blender generated images."
+    "section": "Exemplos do WiSARD",
+    "text": "Exemplos do WiSARD\n\n\n\nImagem contida no dataset WiSARD.\n\n\n\n\n\nImagem térmica contida no dataset WiSARD."
   },
   {
-    "objectID": "index.html#examples-from-gaugan",
-    "href": "index.html#examples-from-gaugan",
+    "objectID": "index.html#exemplos-do-ntut",
+    "href": "index.html#exemplos-do-ntut",
     "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
-    "section": "Examples from GauGAN",
-    "text": "Examples from GauGAN\n\n\n\nImage-segmentation pairs from GauGAN generated images."
+    "section": "Exemplos do NTUT",
+    "text": "Exemplos do NTUT\n\n\n\nImagem contida no dataset NTUT."
+  },
+  {
+    "objectID": "index.html#exemplos-do-sard",
+    "href": "index.html#exemplos-do-sard",
+    "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
+    "section": "Exemplos do SARD",
+    "text": "Exemplos do SARD\n\n\n\nImagem contida no dataset SARD."
+  },
+  {
+    "objectID": "index.html#exemplos-do-afa",
+    "href": "index.html#exemplos-do-afa",
+    "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
+    "section": "Exemplos do AFA",
+    "text": "Exemplos do AFA\n\n\n\nImagem contida no dataset AFA.\n\n\n\n\n\nImagem térmica contida no dataset AFA."
   }
 ]
