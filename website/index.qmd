@@ -35,30 +35,49 @@ Para treinar os diversos modelos utilizados neste sistema foram utilizados os da
 
 ## Exemplos do dataset WiSARD
 
+<div style="text-align: center">
+
 ![Imagem contida no dataset WiSARD.](img/exemplo imagem 1 WiSARD.jpeg){width=400}
 
 ![Imagem térmica contida no dataset WiSARD.](img/DJI_0127_00000465.jpg){width=400}
 
+</div>
+
 ## Exemplos do dataset NTUT
+
+<div style="text-align: center">
 
 ![Imagem contida no dataset NTUT.](img/exemplo imagem 2 NTUT.jpg){width=400}
 
+</div>
+
 ## Exemplos do dataset SARD
+
+<div style="text-align: center">
 
 ![Imagem contida no dataset SARD.](img/exemplo imagem 2 SARD.jpg){width=400}
 
+</div>
+
 ## Exemplos do dataset AFA
+
+<div style="text-align: center">
 
 ![Imagem contida no dataset AFA.](img/Recolha_7_W_06061_png.rf.3d09eec498f74f14e0db5b240f0eb31b.jpg){width=400}
 
 ![Imagem térmica contida no dataset AFA.](img/Recolha_11_00061.png){width=400}
 
+</div>
+
 ---
 
 Por forma a aumentar a quantidade de imagens para o treino dos vários modelos e como forma de experimentação foram realizadas junções dos datasets acima referidos totalizando 15 datasets apresentados na figura abaixo:
 
+<div style="text-align: center">
+
 ![Datasets utilizados para treino dos modelos.](img/Datasets Utilizados.jpeg){width=500}
 
+</div>
 ---
 
 Os modelos, após treinados, foram validados em test sets provenientes dos datasets acima mencionados por forma a obter as métricas mAP50, mAP50-95, Precision e Recall por forma a realizar a avaliação dos mesmos. Os test sets foram escolhidos tendo em conta os cenários possíveis, SAR, patrulhamento e noturno e ainda separados pelo tipo de vestuário utilizado, civil, militar e civil e militar para os dois primeiros. Para os cenários noturnos, existem apenas dois test sets, um contém apenas imagens que foram obtidas através do mesmo UAS e câmara utilizado para obter as imagens de treino e outro apenas com imagens com outro tipo de UAS e câmara.
@@ -67,17 +86,30 @@ Os modelos, após treinados, foram validados em test sets provenientes dos datas
 
 Os resultados dos vários modelos para os cenários de SAR são apresentados na tabela abaixo.
 
+<div style="text-align: center">
+
 ![Resultados dos modelos nos cenários SAR.](img/Resultados SAR.jpg){width=800}
+
+</div>
 
 ## Resultados nos cenários de Patrulhamento
 
 Os resultados dos vários modelos para os cenários de patrulhamento são apresentados na tabela abaixo.
 
+<div style="text-align: center">
+
 ![Resultados dos modelos nos cenários de patrulhamento.](img/Resultados Patrulhamento.png){width=800}
+
+</div>
 
 ## Resultados nos cenários Noturnos
 
+<div style="text-align: center">
+
 ![Resultados dos modelos nos cenários de patrulhamento.](img/Resultados IR.png){width=900}
+
+</div>
+--- 
 
 ## Pesos dos modelos
 

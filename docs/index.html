@@ -147,6 +147,7 @@ Note
 <p>Para treinar os diversos modelos utilizados neste sistema foram utilizados os datasets públicos <a href="https://sites.google.com/uw.edu/wisard/">WiSARD</a> <span class="citation" data-cites="BroylesHaynerEtAl2022"><a href="#ref-BroylesHaynerEtAl2022" role="doc-biblioref">[1]</a></span>, <a href="http://ieee-dataport.org/documents/search-and-rescue-image-dataset-person-detection-sard">SARD</a> <span class="citation" data-cites="ahxm-k331-21"><a href="#ref-ahxm-k331-21" role="doc-biblioref">[2]</a></span> e <a href="https://www.kaggle.com/datasets/kuantinglai/ntut-4k-drone-photo-dataset-for-human-detection?resource=download&amp;select=ntut_drone_train">NTUT</a> <span class="citation" data-cites="NTUT4KDronePhoto"><a href="#ref-NTUT4KDronePhoto" role="doc-biblioref">[3]</a></span>, e um dataset criado especificamente para o presente estudo designado AFA.</p>
 <section id="exemplos-do-dataset-wisard" class="level2">
 <h2 class="anchored" data-anchor-id="exemplos-do-dataset-wisard">Exemplos do dataset WiSARD</h2>
+<div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/exemplo imagem 1 WiSARD.jpeg" class="img-fluid figure-img" width="400"></p>
@@ -159,27 +160,33 @@ Note
 <figcaption>Imagem térmica contida no dataset WiSARD.</figcaption>
 </figure>
 </div>
+</div>
 </section>
 <section id="exemplos-do-dataset-ntut" class="level2">
 <h2 class="anchored" data-anchor-id="exemplos-do-dataset-ntut">Exemplos do dataset NTUT</h2>
+<div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/exemplo imagem 2 NTUT.jpg" class="img-fluid figure-img" width="400"></p>
 <figcaption>Imagem contida no dataset NTUT.</figcaption>
 </figure>
 </div>
+</div>
 </section>
 <section id="exemplos-do-dataset-sard" class="level2">
 <h2 class="anchored" data-anchor-id="exemplos-do-dataset-sard">Exemplos do dataset SARD</h2>
+<div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/exemplo imagem 2 SARD.jpg" class="img-fluid figure-img" width="400"></p>
 <figcaption>Imagem contida no dataset SARD.</figcaption>
 </figure>
 </div>
+</div>
 </section>
 <section id="exemplos-do-dataset-afa" class="level2">
 <h2 class="anchored" data-anchor-id="exemplos-do-dataset-afa">Exemplos do dataset AFA</h2>
+<div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/Recolha_7_W_06061_png.rf.3d09eec498f74f14e0db5b240f0eb31b.jpg" class="img-fluid figure-img" width="400"></p>
@@ -192,13 +199,16 @@ Note
 <figcaption>Imagem térmica contida no dataset AFA.</figcaption>
 </figure>
 </div>
+</div>
 <hr>
 <p>Por forma a aumentar a quantidade de imagens para o treino dos vários modelos e como forma de experimentação foram realizadas junções dos datasets acima referidos totalizando 15 datasets apresentados na figura abaixo:</p>
+<div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/Datasets Utilizados.jpeg" class="img-fluid figure-img" width="500"></p>
 <figcaption>Datasets utilizados para treino dos modelos.</figcaption>
 </figure>
+</div>
 </div>
 <hr>
 <p>Os modelos, após treinados, foram validados em test sets provenientes dos datasets acima mencionados por forma a obter as métricas mAP50, mAP50-95, Precision e Recall por forma a realizar a avaliação dos mesmos. Os test sets foram escolhidos tendo em conta os cenários possíveis, SAR, patrulhamento e noturno e ainda separados pelo tipo de vestuário utilizado, civil, militar e civil e militar para os dois primeiros. Para os cenários noturnos, existem apenas dois test sets, um contém apenas imagens que foram obtidas através do mesmo UAS e câmara utilizado para obter as imagens de treino e outro apenas com imagens com outro tipo de UAS e câmara.</p>
@@ -206,31 +216,38 @@ Note
 <section id="resultados-nos-cenários-sar" class="level2">
 <h2 class="anchored" data-anchor-id="resultados-nos-cenários-sar">Resultados nos cenários SAR</h2>
 <p>Os resultados dos vários modelos para os cenários de SAR são apresentados na tabela abaixo.</p>
+<div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/Resultados SAR.jpg" class="img-fluid figure-img" width="800"></p>
 <figcaption>Resultados dos modelos nos cenários SAR.</figcaption>
 </figure>
 </div>
+</div>
 </section>
 <section id="resultados-nos-cenários-de-patrulhamento" class="level2">
 <h2 class="anchored" data-anchor-id="resultados-nos-cenários-de-patrulhamento">Resultados nos cenários de Patrulhamento</h2>
 <p>Os resultados dos vários modelos para os cenários de patrulhamento são apresentados na tabela abaixo.</p>
+<div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/Resultados Patrulhamento.png" class="img-fluid figure-img" width="800"></p>
 <figcaption>Resultados dos modelos nos cenários de patrulhamento.</figcaption>
 </figure>
 </div>
+</div>
 </section>
 <section id="resultados-nos-cenários-noturnos" class="level2">
 <h2 class="anchored" data-anchor-id="resultados-nos-cenários-noturnos">Resultados nos cenários Noturnos</h2>
+<div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/Resultados IR.png" class="img-fluid figure-img" width="900"></p>
 <figcaption>Resultados dos modelos nos cenários de patrulhamento.</figcaption>
 </figure>
 </div>
+</div>
+<hr>
 </section>
 <section id="pesos-dos-modelos" class="level2">
 <h2 class="anchored" data-anchor-id="pesos-dos-modelos">Pesos dos modelos</h2>

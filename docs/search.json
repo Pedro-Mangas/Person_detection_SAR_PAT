@@ -11,49 +11,49 @@
     "href": "index.html#exemplos-do-dataset-wisard",
     "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
     "section": "Exemplos do dataset WiSARD",
-    "text": "Exemplos do dataset WiSARD\n\n\n\nImagem contida no dataset WiSARD.\n\n\n\n\n\nImagem térmica contida no dataset WiSARD."
+    "text": "Exemplos do dataset WiSARD\n\n\n\n\nImagem contida no dataset WiSARD.\n\n\n\n\n\nImagem térmica contida no dataset WiSARD."
   },
   {
     "objectID": "index.html#exemplos-do-dataset-ntut",
     "href": "index.html#exemplos-do-dataset-ntut",
     "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
     "section": "Exemplos do dataset NTUT",
-    "text": "Exemplos do dataset NTUT\n\n\n\nImagem contida no dataset NTUT."
+    "text": "Exemplos do dataset NTUT\n\n\n\n\nImagem contida no dataset NTUT."
   },
   {
     "objectID": "index.html#exemplos-do-dataset-sard",
     "href": "index.html#exemplos-do-dataset-sard",
     "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
     "section": "Exemplos do dataset SARD",
-    "text": "Exemplos do dataset SARD\n\n\n\nImagem contida no dataset SARD."
+    "text": "Exemplos do dataset SARD\n\n\n\n\nImagem contida no dataset SARD."
   },
   {
     "objectID": "index.html#exemplos-do-dataset-afa",
     "href": "index.html#exemplos-do-dataset-afa",
     "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
     "section": "Exemplos do dataset AFA",
-    "text": "Exemplos do dataset AFA\n\n\n\nImagem contida no dataset AFA.\n\n\n\n\n\nImagem térmica contida no dataset AFA.\n\n\n\nPor forma a aumentar a quantidade de imagens para o treino dos vários modelos e como forma de experimentação foram realizadas junções dos datasets acima referidos totalizando 15 datasets apresentados na figura abaixo:\n\n\n\nDatasets utilizados para treino dos modelos.\n\n\n\nOs modelos, após treinados, foram validados em test sets provenientes dos datasets acima mencionados por forma a obter as métricas mAP50, mAP50-95, Precision e Recall por forma a realizar a avaliação dos mesmos. Os test sets foram escolhidos tendo em conta os cenários possíveis, SAR, patrulhamento e noturno e ainda separados pelo tipo de vestuário utilizado, civil, militar e civil e militar para os dois primeiros. Para os cenários noturnos, existem apenas dois test sets, um contém apenas imagens que foram obtidas através do mesmo UAS e câmara utilizado para obter as imagens de treino e outro apenas com imagens com outro tipo de UAS e câmara."
+    "text": "Exemplos do dataset AFA\n\n\n\n\nImagem contida no dataset AFA.\n\n\n\n\n\nImagem térmica contida no dataset AFA.\n\n\n\n\nPor forma a aumentar a quantidade de imagens para o treino dos vários modelos e como forma de experimentação foram realizadas junções dos datasets acima referidos totalizando 15 datasets apresentados na figura abaixo:\n\n\n\n\nDatasets utilizados para treino dos modelos.\n\n\n\n\nOs modelos, após treinados, foram validados em test sets provenientes dos datasets acima mencionados por forma a obter as métricas mAP50, mAP50-95, Precision e Recall por forma a realizar a avaliação dos mesmos. Os test sets foram escolhidos tendo em conta os cenários possíveis, SAR, patrulhamento e noturno e ainda separados pelo tipo de vestuário utilizado, civil, militar e civil e militar para os dois primeiros. Para os cenários noturnos, existem apenas dois test sets, um contém apenas imagens que foram obtidas através do mesmo UAS e câmara utilizado para obter as imagens de treino e outro apenas com imagens com outro tipo de UAS e câmara."
   },
   {
     "objectID": "index.html#resultados-nos-cenários-sar",
     "href": "index.html#resultados-nos-cenários-sar",
     "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
     "section": "Resultados nos cenários SAR",
-    "text": "Resultados nos cenários SAR\nOs resultados dos vários modelos para os cenários de SAR são apresentados na tabela abaixo.\n\n\n\nResultados dos modelos nos cenários SAR."
+    "text": "Resultados nos cenários SAR\nOs resultados dos vários modelos para os cenários de SAR são apresentados na tabela abaixo.\n\n\n\n\nResultados dos modelos nos cenários SAR."
   },
   {
     "objectID": "index.html#resultados-nos-cenários-de-patrulhamento",
     "href": "index.html#resultados-nos-cenários-de-patrulhamento",
     "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
     "section": "Resultados nos cenários de Patrulhamento",
-    "text": "Resultados nos cenários de Patrulhamento\nOs resultados dos vários modelos para os cenários de patrulhamento são apresentados na tabela abaixo.\n\n\n\nResultados dos modelos nos cenários de patrulhamento."
+    "text": "Resultados nos cenários de Patrulhamento\nOs resultados dos vários modelos para os cenários de patrulhamento são apresentados na tabela abaixo.\n\n\n\n\nResultados dos modelos nos cenários de patrulhamento."
   },
   {
     "objectID": "index.html#resultados-nos-cenários-noturnos",
     "href": "index.html#resultados-nos-cenários-noturnos",
     "title": "Deteção de Pessoas em Ambiente Diurno e Noturno para Missões de Busca e Patrulhamento",
     "section": "Resultados nos cenários Noturnos",
-    "text": "Resultados nos cenários Noturnos\n\n\n\nResultados dos modelos nos cenários de patrulhamento."
+    "text": "Resultados nos cenários Noturnos\n\n\n\n\nResultados dos modelos nos cenários de patrulhamento."
   },
   {
     "objectID": "index.html#pesos-dos-modelos",
