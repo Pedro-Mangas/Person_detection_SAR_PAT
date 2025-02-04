@@ -142,9 +142,11 @@ Note
 <p>Os códigos para realizar treino, validação e inferências dos modelos utilizados no desenvolvimento deste estudo estão disponíveis no <a href="https://pedro-mangas.github.io/Person_detection_SAR_PAT/">repositório do Github oficial</a>.</p>
 </div>
 </div>
+<div style="text-align: justify">
 <p>Como ajuda para missões de SAR (Search and Rescue) e de patrulhamento realizadas pela Força Aérea Portuguesa (FA), introduzem-se as tecnologias atuais que têm vindo a ser desenvolvidas e cada vez mais utilizadas nestes âmbitos, os veículos aéreos não tripulados (UAS) . Em ambas as missões, busca e salvamento e patrulhamento, uma tarefa em comum é a deteção de pessoas, quer seja por serem agentes de interesse no cenário de patrulhamento, como por exemplo possíveis intrusos, quer seja por serem o objeto de resgate num cenário de busca e salvamento. Para isso, o presente estudo teve como objetivos desenvolver um sistema de deteção automática de pessoas, passível de ser utilizado para análise automática e apoio à decisão em missões de busca e patrulhamento, utilizando imagens aéreas de baixa altitude. Esta ferramenta poderá ser usada para análise de dados em tempo real, recebendo uma stream de vídeo de um sensor a bordo. O sistema é capaz de detetar pessoas nos diversos tipos de ambientes terrestres em período diurno e noturno.</p>
 <hr>
 <p>Para treinar os diversos modelos utilizados neste sistema foram utilizados os datasets públicos <a href="https://sites.google.com/uw.edu/wisard/">WiSARD</a> <span class="citation" data-cites="BroylesHaynerEtAl2022"><a href="#ref-BroylesHaynerEtAl2022" role="doc-biblioref">[1]</a></span>, <a href="http://ieee-dataport.org/documents/search-and-rescue-image-dataset-person-detection-sard">SARD</a> <span class="citation" data-cites="ahxm-k331-21"><a href="#ref-ahxm-k331-21" role="doc-biblioref">[2]</a></span> e <a href="https://www.kaggle.com/datasets/kuantinglai/ntut-4k-drone-photo-dataset-for-human-detection?resource=download&amp;select=ntut_drone_train">NTUT</a> <span class="citation" data-cites="NTUT4KDronePhoto"><a href="#ref-NTUT4KDronePhoto" role="doc-biblioref">[3]</a></span>, e um dataset criado especificamente para o presente estudo designado AFA.</p>
+</div>
 <section id="exemplos-do-dataset-wisard" class="level2">
 <h2 class="anchored" data-anchor-id="exemplos-do-dataset-wisard">Exemplos do dataset WiSARD</h2>
 <div style="text-align: center">
@@ -201,7 +203,9 @@ Note
 </div>
 </div>
 <hr>
+<div style="text-align: justify">
 <p>Por forma a aumentar a quantidade de imagens para o treino dos vários modelos e como forma de experimentação foram realizadas junções dos datasets acima referidos totalizando 15 datasets apresentados na figura abaixo:</p>
+</div>
 <div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -211,11 +215,15 @@ Note
 </div>
 </div>
 <hr>
+<div style="text-align: justify">
 <p>Os modelos, após treinados, foram validados em test sets provenientes dos datasets acima mencionados por forma a obter as métricas mAP50, mAP50-95, Precision e Recall por forma a realizar a avaliação dos mesmos. Os test sets foram escolhidos tendo em conta os cenários possíveis, SAR, patrulhamento e noturno e ainda separados pelo tipo de vestuário utilizado, civil, militar e civil e militar para os dois primeiros. Para os cenários noturnos, existem apenas dois test sets, um contém apenas imagens que foram obtidas através do mesmo UAS e câmara utilizado para obter as imagens de treino e outro apenas com imagens com outro tipo de UAS e câmara.</p>
+</div>
 </section>
 <section id="resultados-nos-cenários-sar" class="level2">
 <h2 class="anchored" data-anchor-id="resultados-nos-cenários-sar">Resultados nos cenários SAR</h2>
+<div style="text-align: justify">
 <p>Os resultados dos vários modelos para os cenários de SAR são apresentados na tabela abaixo.</p>
+</div>
 <div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -227,7 +235,9 @@ Note
 </section>
 <section id="resultados-nos-cenários-de-patrulhamento" class="level2">
 <h2 class="anchored" data-anchor-id="resultados-nos-cenários-de-patrulhamento">Resultados nos cenários de Patrulhamento</h2>
+<div style="text-align: justify">
 <p>Os resultados dos vários modelos para os cenários de patrulhamento são apresentados na tabela abaixo.</p>
+</div>
 <div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -239,6 +249,9 @@ Note
 </section>
 <section id="resultados-nos-cenários-noturnos" class="level2">
 <h2 class="anchored" data-anchor-id="resultados-nos-cenários-noturnos">Resultados nos cenários Noturnos</h2>
+<div style="text-align: justify">
+<p>Os resultados dos vários modelos para os cenários noturnos são apresentados na tabela abaixo.</p>
+</div>
 <div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -251,7 +264,9 @@ Note
 </section>
 <section id="pesos-dos-modelos" class="level2">
 <h2 class="anchored" data-anchor-id="pesos-dos-modelos">Pesos dos modelos</h2>
+<div style="text-align: justify">
 <p>Os pesos de todos os modelos treinados estão disponiveis publicamente <a href="https://drive.google.com/drive/folders/1vOcEMrmMMs7W9CuS1Nm2WaZVQxAIWtOU?usp=sharing">neste google drive</a>.</p>
+</div>
 
 
 

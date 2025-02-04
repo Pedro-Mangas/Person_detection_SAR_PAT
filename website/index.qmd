@@ -26,12 +26,15 @@ format:
 Os códigos para realizar treino, validação e inferências dos modelos utilizados no desenvolvimento deste estudo estão disponíveis no [repositório do Github oficial](https://pedro-mangas.github.io/Person_detection_SAR_PAT/).
 :::
 
+<div style="text-align: justify">
+
 Como ajuda para missões de SAR (Search and Rescue) e de patrulhamento realizadas pela Força Aérea Portuguesa (FA), introduzem-se as tecnologias atuais que têm vindo a ser desenvolvidas e cada vez mais utilizadas nestes âmbitos, os veículos aéreos não tripulados (UAS) \citep{partheepan2023autonomous, mcenroe2022survey}. Em ambas as missões, busca e salvamento e patrulhamento, uma tarefa em comum é a deteção de pessoas, quer seja por serem agentes de interesse no cenário de patrulhamento, como por exemplo possíveis intrusos, quer seja por serem o objeto de resgate num cenário de busca e salvamento. Para isso, o presente estudo teve como objetivos desenvolver um sistema de deteção automática de pessoas, passível de ser utilizado para análise automática e apoio à decisão em missões de busca e patrulhamento, utilizando imagens aéreas de baixa altitude. Esta ferramenta poderá ser usada para análise de dados em tempo real, recebendo uma stream de vídeo de um sensor a bordo. O sistema é capaz de detetar pessoas nos diversos tipos de ambientes terrestres em período diurno e noturno.
 
 ---
 
 Para treinar os diversos modelos utilizados neste sistema foram utilizados os datasets públicos [WiSARD](https://sites.google.com/uw.edu/wisard/) @BroylesHaynerEtAl2022, [SARD](http://ieee-dataport.org/documents/search-and-rescue-image-dataset-person-detection-sard) @ahxm-k331-21 e [NTUT](https://www.kaggle.com/datasets/kuantinglai/ntut-4k-drone-photo-dataset-for-human-detection?resource=download&select=ntut_drone_train) @NTUT4KDronePhoto, e um dataset criado especificamente para o presente estudo designado AFA.
 
+</div>
 
 ## Exemplos do dataset WiSARD
 
@@ -71,7 +74,11 @@ Para treinar os diversos modelos utilizados neste sistema foram utilizados os da
 
 ---
 
+<div style="text-align: justify">
+
 Por forma a aumentar a quantidade de imagens para o treino dos vários modelos e como forma de experimentação foram realizadas junções dos datasets acima referidos totalizando 15 datasets apresentados na figura abaixo:
+
+</div>
 
 <div style="text-align: center">
 
@@ -80,11 +87,19 @@ Por forma a aumentar a quantidade de imagens para o treino dos vários modelos e
 </div>
 ---
 
+<div style="text-align: justify">
+
 Os modelos, após treinados, foram validados em test sets provenientes dos datasets acima mencionados por forma a obter as métricas mAP50, mAP50-95, Precision e Recall por forma a realizar a avaliação dos mesmos. Os test sets foram escolhidos tendo em conta os cenários possíveis, SAR, patrulhamento e noturno e ainda separados pelo tipo de vestuário utilizado, civil, militar e civil e militar para os dois primeiros. Para os cenários noturnos, existem apenas dois test sets, um contém apenas imagens que foram obtidas através do mesmo UAS e câmara utilizado para obter as imagens de treino e outro apenas com imagens com outro tipo de UAS e câmara.
+
+</div>
 
 ## Resultados nos cenários SAR
 
+<div style="text-align: justify">
+
 Os resultados dos vários modelos para os cenários de SAR são apresentados na tabela abaixo.
+
+</div>
 
 <div style="text-align: center">
 
@@ -94,7 +109,11 @@ Os resultados dos vários modelos para os cenários de SAR são apresentados na 
 
 ## Resultados nos cenários de Patrulhamento
 
+<div style="text-align: justify">
+
 Os resultados dos vários modelos para os cenários de patrulhamento são apresentados na tabela abaixo.
+
+</div>
 
 <div style="text-align: center">
 
@@ -103,6 +122,12 @@ Os resultados dos vários modelos para os cenários de patrulhamento são aprese
 </div>
 
 ## Resultados nos cenários Noturnos
+
+<div style="text-align: justify">
+
+Os resultados dos vários modelos para os cenários noturnos são apresentados na tabela abaixo.
+
+</div>
 
 <div style="text-align: center">
 
@@ -113,4 +138,8 @@ Os resultados dos vários modelos para os cenários de patrulhamento são aprese
 
 ## Pesos dos modelos
 
+<div style="text-align: justify">
+
 Os pesos de todos os modelos treinados estão disponiveis publicamente [neste google drive](https://drive.google.com/drive/folders/1vOcEMrmMMs7W9CuS1Nm2WaZVQxAIWtOU?usp=sharing).
+
+</div>
