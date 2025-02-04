@@ -32,23 +32,53 @@ Como ajuda para missões de SAR (Search and Rescue) e de patrulhamento realizada
 
 Para treinar os diversos modelos utilizados neste sistema foram utilizados os datasets públicos [WiSARD](https://sites.google.com/uw.edu/wisard/) @BroylesHaynerEtAl2022, [SARD](http://ieee-dataport.org/documents/search-and-rescue-image-dataset-person-detection-sard) @ahxm-k331-21 e [NTUT](https://www.kaggle.com/datasets/kuantinglai/ntut-4k-drone-photo-dataset-for-human-detection?resource=download&select=ntut_drone_train) @NTUT4KDronePhoto, e um dataset criado especificamente para o presente estudo designado AFA.
 
-## Exemplos do WiSARD
+
+## Exemplos do dataset WiSARD
 
 ![Imagem contida no dataset WiSARD.](img/exemplo imagem 1 WiSARD.jpeg){width=400}
 
 ![Imagem térmica contida no dataset WiSARD.](img/DJI_0127_00000465.jpg){width=400}
 
-## Exemplos do NTUT
+## Exemplos do dataset NTUT
 
 ![Imagem contida no dataset NTUT.](img/exemplo imagem 2 NTUT.jpg){width=400}
 
-## Exemplos do SARD
+## Exemplos do dataset SARD
 
 ![Imagem contida no dataset SARD.](img/exemplo imagem 2 SARD.jpg){width=400}
 
-## Exemplos do AFA
+## Exemplos do dataset AFA
 
 ![Imagem contida no dataset AFA.](img/Recolha_7_W_06061_png.rf.3d09eec498f74f14e0db5b240f0eb31b.jpg){width=400}
 
 ![Imagem térmica contida no dataset AFA.](img/Recolha_11_00061.png){width=400}
 
+---
+
+Por forma a aumentar a quantidade de imagens para o treino dos vários modelos e como forma de experimentação foram realizadas junções dos datasets acima referidos totalizando 15 datasets apresentados na figura abaixo:
+
+![Datasets utilizados para treino dos modelos.](img/Datasets Utilizados.jpeg){width=500}
+
+---
+
+Os modelos, após treinados, foram validados em test sets provenientes dos datasets acima mencionados por forma a obter as métricas mAP50, mAP50-95, Precision e Recall por forma a realizar a avaliação dos mesmos. Os test sets foram escolhidos tendo em conta os cenários possíveis, SAR, patrulhamento e noturno e ainda separados pelo tipo de vestuário utilizado, civil, militar e civil e militar para os dois primeiros. Para os cenários noturnos, existem apenas dois test sets, um contém apenas imagens que foram obtidas através do mesmo UAS e câmara utilizado para obter as imagens de treino e outro apenas com imagens com outro tipo de UAS e câmara.
+
+## Resultados nos cenários SAR
+
+Os resultados dos vários modelos para os cenários de SAR são apresentados na tabela abaixo.
+
+![Resultados dos modelos nos cenários SAR.](img/Resultados SAR.jpg){width=800}
+
+## Resultados nos cenários de Patrulhamento
+
+Os resultados dos vários modelos para os cenários de patrulhamento são apresentados na tabela abaixo.
+
+![Resultados dos modelos nos cenários de patrulhamento.](img/Resultados Patrulhamento.png){width=800}
+
+## Resultados nos cenários Noturnos
+
+![Resultados dos modelos nos cenários de patrulhamento.](img/Resultados IR.png){width=900}
+
+## Pesos dos modelos
+
+Os pesos de todos os modelos treinados estão disponiveis publicamente [neste google drive](https://drive.google.com/drive/folders/1vOcEMrmMMs7W9CuS1Nm2WaZVQxAIWtOU?usp=sharing).
